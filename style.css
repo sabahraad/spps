@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    max-width: 1000px;
+    background-color: rgb(173, 238, 213);
+    margin:10px auto;
+    padding: 20px;
+    
+}
+.header{
+    float: right;
+    padding: 30px;
+}
+.header a{
+    color:black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.header a:hover{
+    text-decoration: underline;
+    color: tomato;
+}
+.image{
+    width: 100px;
+    height: 120px;
+    border:3px solid white;
+    border-radius: 50%;
+    float: left;
+}
+.pro-header{
+    float: left;
+    padding: 30px;
+
+}
+h1,h2,h3,h4,h5,h6{
+    color:orangered ;
+}
+.clear{
+    clear: both;
+}
+hr{
+    border: solid black 3px ;
+    width: 100%;
+    margin:20px auto;
+    
+    border-bottom: none;
+}
+#personal-information{
+
+
+}
+.content{
+     margin: 20px;
+}
+.left-div{
+    width: 30%;
+    float: left;
+
+}
+.right-div{
+    width: 70%;
+    float: right;
+
+}
+.common-hr{
+    border: solid black 1px;
+    border-bottom: none;
+    margin:20 auto;
+    width: 100%;
+}
+#work-experience{
+
+}
+#key-skill{
+
+}
+#education{
+
+}
+.right-left{
+    float: left;
+    width: 45%;
+}
+.right-right{
+    float: right;
+    width: 45%;
+}
+.footer-style{
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+
+}
+.footer-style a{
+    color:white;
+    text-decoration: none;
+    margin: 20px;
+}
+.footer-style a:hover{
+    color:red;
+    text-decoration:underline;
+    margin: auto;
+    margin-top: 20px;
+}
+.footer-style  p{
+    color:white;
+    text-decoration: none;
+    margin-top: 20px;
+    
+
+}
+
+.bar {
+    width: 100%;
+    background-color: #ddd;
+  }
+  
+  .skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+  }
+  
+  .html {width: 90%; background-color: #04AA6D;}
+  .css {width: 80%; background-color: #2196F3;}
+  .js {width: 65%; background-color: #f44336;}
+  .php {width: 60%; background-color: #808080;}
