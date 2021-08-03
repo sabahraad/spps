@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="json.css">
+
+      <title>Github Users</title>
+</head>
+<body>
+      <h1>Github Users</h1>
+      <button onclick="loadUser()">Grab</button>
+      <div id='mypeople'></div>
+
+
+
+      <script>
+            function loadUser(){
+ 
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.open("GET", "https://api.github.com/users");
+            
+            xmlhttp.onreadystatechange = function() {
+                  if (this.status == 200) {
+                        var people = JSON.parse(this.responseText);
+                        var output = "";
+                        var i;
+                        for(i=0; i<10; i++) {
+                              output+='<div class="container"><div><img src="'+people[i].avatar_url+'" width="100px" height="100px"></div>' + 
+                                          '<div><ul>' + 
+                                                '<li>ID: '+people[i].id+'</li>' +   
+                                                '<li>Login: '+people[i].login+'</li>' +  
+                                                '<li>Type:'+people[i].type +'</li>'+
+                                                '<li>Repos:'+people[i].repos_url +'</li>' +
+                                                '<li>Github:<a href="'+people[i].html_url+'">'+people[i].html_url +'</a></li>'+
+                                          '</ul></div></div>' ; 
+                        }
+                        document.getElementById("mypeople").innerHTML = output;
+                  }
+            };
+            xmlhttp.send();         
+            
+      }
+      </script>
+</body>
+</html>
